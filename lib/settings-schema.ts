@@ -45,7 +45,17 @@ export const settingsSchema = z.object({
       family: t("Un format plus grand offert chaque jour, et un thé à la menthe offert chaque mois.", "حجم أكبر مجاناً كل يوم، وشاي بالنعناع مجاني كل شهر.", "A free size upgrade every day, and a mint tea on us each month."),
     }),
 
-  timezone: z.string().default("Africa/Casablanca"),
+  timezone: z
+    .string()
+    .refine((tz) => {
+      try {
+        new Intl.DateTimeFormat("en", { timeZone: tz });
+        return true;
+      } catch {
+        return false;
+      }
+    })
+    .default("Africa/Casablanca"),
 });
 
 export type Settings = z.infer<typeof settingsSchema>;
