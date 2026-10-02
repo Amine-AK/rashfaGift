@@ -46,5 +46,70 @@
     "contactTitle": "Contact",
     "contact": "Ask us at the counter, or write to us at the address shown in the café.",
     "updated": "Last updated: October 2026"
+  },
+  "join": {
+    "title": "Your Rashfa card",
+    "subtitle": "Less than a minute, and your seat is saved.",
+    "progress": "Sign-up progress",
+    "phoneLabel": "Your phone number",
+    "phoneHint": "We'll send you a 6-digit code by SMS. Nothing else.",
+    "referredBy": "A friend invited you. You'll both get a little bonus after your first visit.",
+    "sendCode": "Send me a code",
+    "sending": "Sending…",
+    "codeSent": "We sent a code to",
+    "devCode": "Development mode, your code is:",
+    "codeLabel": "The 6-digit code",
+    "verify": "Continue",
+    "checking": "Checking…",
+    "changeNumber": "Change number",
+    "resend": "Send it again",
+    "resendIn": "Send again in {seconds}s",
+    "nameLabel": "Your first name",
+    "birthdayLabel": "Your birthday (optional)",
+    "birthdayHint": "Just so we can keep a small gift for you on the day.",
+    "consent": "I agree that Rashfa keeps my first name, number and visits to run my loyalty card.",
+    "privacyLink": "Read how we use them",
+    "create": "Create my card",
+    "creating": "Preparing your card…",
+    "smsBody": "Rashfa: your code is {code}. It stays valid for 10 minutes.",
+    "errors": {
+      "invalidPhone": "This number doesn't look right. Try 06 12 34 56 78.",
+      "tooMany": "That's a lot of codes. Please wait a few minutes and try again.",
+      "smsFailed": "We couldn't send the SMS right now. Please try again in a moment.",
+      "invalidCode": "That code doesn't match. Check the SMS and try again.",
+      "expiredCode": "This code has expired. Ask for a new one.",
+      "tooManyAttempts": "Too many tries. Ask for a new code.",
+      "invalidName": "Please tell us your first name.",
+      "invalidBirthday": "This date doesn't look right.",
+      "consentRequired": "Please tick the box so we can keep your card."
+    }
+  },
+  "welcome": {
+    "title": "Welcome, {name}",
+    "giftWaiting": "A small welcome gift is waiting for you. It opens tomorrow, so come back soon.",
+    "installTitle": "Keep Rashfa on your home screen",
+    "notifyTitle": "Gentle notifications",
+    "openCard": "Open my card"
+  },
+  "install": {
+    "why": "Like an app, without the store. Your card is always one tap away.",
+    "installButton": "Add to home screen",
+    "installed": "Rashfa is on your home screen. Lovely.",
+    "iosStep1": "Tap the share button <icon></icon> at the bottom of Safari.",
+    "iosStep2": "Scroll and choose “Add to Home Screen”.",
+    "iosStep3": "Tap “Add”, then open Rashfa from your home screen.",
+    "androidStep1": "Open the browser menu (⋮ at the top right).",
+    "androidStep2": "Choose “Install app” or “Add to Home screen”."
+  },
+  "notify": {
+    "why": "Now and then we'd like to tell you when a gift is ready or a quiet afternoon has a little treat.",
+    "promise1": "Never more than a couple a week.",
+    "promise2": "Never at night, never pushy.",
+    "yes": "Yes, gently",
+    "later": "Maybe later",
+    "on": "Notifications are on. We'll keep them rare.",
+    "denied": "Notifications are blocked in your browser settings. You can allow them there whenever you like.",
+    "iosInstallFirst": "On iPhone, add Rashfa to your home screen first, then open it from there to turn on notifications.",
+    "unsupported": "This browser can't receive notifications. Your card works perfectly without them."
   }
 }

@@ -46,5 +46,70 @@
     "contactTitle": "Contact",
     "contact": "Demandez-nous au comptoir, ou écrivez-nous à l'adresse affichée au café.",
     "updated": "Dernière mise à jour : octobre 2026"
+  },
+  "join": {
+    "title": "Votre carte Rashfa",
+    "subtitle": "Moins d'une minute, et votre place est gardée.",
+    "progress": "Étapes de l'inscription",
+    "phoneLabel": "Votre numéro de téléphone",
+    "phoneHint": "Nous vous enverrons un code à 6 chiffres par SMS. Rien d'autre.",
+    "referredBy": "Un ami vous a invité. Vous recevrez tous les deux un petit bonus après votre première visite.",
+    "sendCode": "Recevoir un code",
+    "sending": "Envoi…",
+    "codeSent": "Nous avons envoyé un code au",
+    "devCode": "Mode développement, votre code est :",
+    "codeLabel": "Le code à 6 chiffres",
+    "verify": "Continuer",
+    "checking": "Vérification…",
+    "changeNumber": "Changer de numéro",
+    "resend": "Renvoyer le code",
+    "resendIn": "Renvoyer dans {seconds} s",
+    "nameLabel": "Votre prénom",
+    "birthdayLabel": "Votre anniversaire (facultatif)",
+    "birthdayHint": "Juste pour vous garder un petit cadeau ce jour-là.",
+    "consent": "J'accepte que Rashfa conserve mon prénom, mon numéro et mes visites pour gérer ma carte de fidélité.",
+    "privacyLink": "Voir comment nous les utilisons",
+    "create": "Créer ma carte",
+    "creating": "Préparation de votre carte…",
+    "smsBody": "Rashfa : votre code est {code}. Il reste valable 10 minutes.",
+    "errors": {
+      "invalidPhone": "Ce numéro ne semble pas correct. Essayez 06 12 34 56 78.",
+      "tooMany": "Beaucoup de codes demandés. Patientez quelques minutes, puis réessayez.",
+      "smsFailed": "Impossible d'envoyer le SMS pour l'instant. Réessayez dans un instant.",
+      "invalidCode": "Ce code ne correspond pas. Vérifiez le SMS et réessayez.",
+      "expiredCode": "Ce code a expiré. Demandez-en un nouveau.",
+      "tooManyAttempts": "Trop d'essais. Demandez un nouveau code.",
+      "invalidName": "Dites-nous votre prénom.",
+      "invalidBirthday": "Cette date ne semble pas correcte.",
+      "consentRequired": "Cochez la case pour que nous puissions garder votre carte."
+    }
+  },
+  "welcome": {
+    "title": "Bienvenue, {name}",
+    "giftWaiting": "Un petit cadeau de bienvenue vous attend. Il s'ouvre demain, alors revenez bientôt.",
+    "installTitle": "Gardez Rashfa sur votre écran d'accueil",
+    "notifyTitle": "Des notifications tout en douceur",
+    "openCard": "Ouvrir ma carte"
+  },
+  "install": {
+    "why": "Comme une application, sans passer par un store. Votre carte toujours à portée de main.",
+    "installButton": "Ajouter à l'écran d'accueil",
+    "installed": "Rashfa est sur votre écran d'accueil. Parfait.",
+    "iosStep1": "Touchez le bouton de partage <icon></icon> en bas de Safari.",
+    "iosStep2": "Faites défiler et choisissez « Sur l'écran d'accueil ».",
+    "iosStep3": "Touchez « Ajouter », puis ouvrez Rashfa depuis votre écran d'accueil.",
+    "androidStep1": "Ouvrez le menu du navigateur (⋮ en haut à droite).",
+    "androidStep2": "Choisissez « Installer l'application » ou « Ajouter à l'écran d'accueil »."
+  },
+  "notify": {
+    "why": "De temps en temps, nous aimerions vous dire qu'un cadeau est prêt, ou qu'un après-midi calme cache une petite douceur.",
+    "promise1": "Jamais plus de deux par semaine.",
+    "promise2": "Jamais la nuit, jamais insistant.",
+    "yes": "Oui, en douceur",
+    "later": "Plus tard",
+    "on": "Notifications activées. Nous les garderons rares.",
+    "denied": "Les notifications sont bloquées dans les réglages du navigateur. Vous pouvez les autoriser quand vous voulez.",
+    "iosInstallFirst": "Sur iPhone, ajoutez d'abord Rashfa à l'écran d'accueil, puis ouvrez-le depuis là pour activer les notifications.",
+    "unsupported": "Ce navigateur ne peut pas recevoir de notifications. Votre carte fonctionne très bien sans."
   }
 }

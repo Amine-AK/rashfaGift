@@ -80,6 +80,7 @@ create table gift_pool (
   tier text not null check (tier in ('common', 'medium', 'rare')),
   weight int not null check (weight > 0),
   est_cost numeric(8, 2) not null default 0,
+  uses int not null default 1 check (uses between 1 and 31), -- e.g. 7 = "a free drink every day for a week"
   active boolean not null default true,
   created_at timestamptz not null default now()
 );
@@ -95,8 +96,10 @@ create table customer_gifts (
   created_at timestamptz not null default now(),
   available_from timestamptz not null,
   expires_at timestamptz not null,
+  uses_left int not null default 1 check (uses_left >= 0),
+  last_used_at timestamptz,
   revealed_at timestamptz,
-  claimed_at timestamptz,
+  claimed_at timestamptz,                  -- set when the last use is redeemed
   claimed_by uuid references staff (id) on delete set null
 );
 create index customer_gifts_customer_idx on customer_gifts (customer_id, created_at desc);
