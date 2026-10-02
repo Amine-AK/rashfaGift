@@ -183,7 +183,7 @@ export function MenuEditor({ menu, canUpload }: { menu: MenuCategory[]; canUploa
                 <DrinkDoodle kind={c.doodle as DoodleKind} size={44} />
                 <div>
                   <h2 className="font-serif text-xl font-bold">
-                    {tr(c.name, locale)} {c.highlight && <span className="text-sm text-zellige-red">★ {t("signature")}</span>}
+                    {tr(c.name, locale)} {c.highlight && <span className="text-sm text-zellige-red-ink">★ {t("signature")}</span>}
                   </h2>
                   {c.tagline && <p className="text-sm italic text-wood-dark">{tr(c.tagline, locale)}</p>}
                 </div>

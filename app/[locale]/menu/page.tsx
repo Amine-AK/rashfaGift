@@ -15,7 +15,7 @@ export async function generateMetadata() {
 }
 
 function Price({ item, t }: { item: MenuItem; t: (k: string) => string }) {
-  if (item.soldOut) return <span className="shrink-0 whitespace-nowrap text-sm font-bold text-zellige-red">{t("soldOut")}</span>;
+  if (item.soldOut) return <span className="shrink-0 whitespace-nowrap text-sm font-bold text-zellige-red-ink">{t("soldOut")}</span>;
   if (item.price == null || item.needsVerify) return <span className="shrink-0 whitespace-nowrap text-sm text-wood-dark">{t("priceAtCounter")}</span>;
   return (
     <span className="shrink-0 whitespace-nowrap font-bold tabular-nums" dir="ltr">
@@ -53,22 +53,29 @@ export default async function MenuPage({ params }: PageProps<"/[locale]/menu">) 
           </nav>
         )}
 
-        {signature.map((c) => (
+        {signature.map((c, ci) => (
           <section key={c.id} id={c.slug} className="mt-6 scroll-mt-32">
             <div className="flex items-end justify-between">
               <div>
-                <p className="text-xs font-bold uppercase tracking-wider text-zellige-red">{t("signature")}</p>
+                <p className="text-xs font-bold uppercase tracking-wider text-zellige-red-ink">{t("signature")}</p>
                 <h2 className="font-serif text-3xl font-bold">{tr(c.name, locale)}</h2>
                 {c.tagline && <p className="font-hand text-xl text-wood-dark">{tr(c.tagline, locale)}</p>}
               </div>
               <DrinkDoodle kind={c.doodle as DoodleKind} size={60} />
             </div>
             <div className="-mx-4 mt-3 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2">
-              {c.items.map((item) => (
+              {c.items.map((item, ii) => (
                 <article key={item.id} className="w-64 shrink-0 snap-start overflow-hidden rounded-[var(--radius-card)] bg-paper shadow-[var(--shadow-soft)]">
                   <div className="relative aspect-[4/5] bg-wood-light/40">
                     {item.photoUrl ? (
-                      <Image src={item.photoUrl} alt={tr(item.name, locale)} fill sizes="256px" className={`object-cover ${item.soldOut ? "grayscale" : ""}`} />
+                      <Image
+                        src={item.photoUrl}
+                        alt={tr(item.name, locale)}
+                        fill
+                        sizes="256px"
+                        // The first signature photos are the largest thing on screen: load them first.
+                        preload={ci === 0 && ii < 2}
+                        className={`object-cover ${item.soldOut ? "grayscale" : ""}`} />
                     ) : (
                       <div className="grid size-full place-items-center">
                         <DrinkDoodle kind="crepe" size={96} />

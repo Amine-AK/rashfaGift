@@ -71,7 +71,7 @@ export function FlashOfferCard({ offer }: { offer: FlashCardOffer }) {
       <div className="flex items-start gap-3">
         <DrinkDoodle kind="iced" size={56} className="shrink-0" />
         <div className="min-w-0 flex-1">
-          <p className="text-xs font-bold uppercase tracking-wider text-zellige-red">{notStarted ? t("soon") : t("now")}</p>
+          <p className="text-xs font-bold uppercase tracking-wider text-zellige-red-ink">{notStarted ? t("soon") : t("now")}</p>
           <h3 className="font-serif text-xl font-bold leading-tight">{offer.title}</h3>
           <p className="mt-1">{offer.reward}</p>
         </div>

@@ -24,6 +24,9 @@ export default async function AdminLayout({ children, params }: LayoutProps<"/[l
             <span className="font-serif text-xl font-bold">{t("title")}</span>
           </Link>
           <div className="flex items-center gap-3">
+            <Link href="/poster" className="text-sm font-bold text-menu-green underline-offset-4 hover:underline">
+              {t("poster")}
+            </Link>
             <Link href="/staff" className="text-sm font-bold text-menu-green underline-offset-4 hover:underline">
               {t("counter")}
             </Link>

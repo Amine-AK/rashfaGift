@@ -7,9 +7,9 @@ const variants: Record<Variant, string> = {
   primary: "bg-menu-green text-white hover:bg-menu-green-dark disabled:bg-menu-green/50",
   secondary: "bg-paper text-espresso border-2 border-wood hover:bg-wood-light/40 disabled:opacity-50",
   ghost: "bg-transparent text-wood-dark hover:bg-wood-light/40 disabled:opacity-50",
-  flash: "bg-zellige-red text-white hover:brightness-95 disabled:opacity-50",
+  flash: "bg-zellige-red-ink text-white hover:brightness-95 disabled:opacity-50",
   gift: "bg-zellige-yellow text-espresso hover:brightness-95 disabled:opacity-50",
-  danger: "bg-paper text-zellige-red border-2 border-zellige-red/60 hover:bg-zellige-red/5 disabled:opacity-50",
+  danger: "bg-paper text-zellige-red-ink border-2 border-zellige-red/60 hover:bg-zellige-red/5 disabled:opacity-50",
 };
 
 const sizes: Record<Size, string> = {

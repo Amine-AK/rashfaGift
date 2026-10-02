@@ -46,7 +46,7 @@ export default async function OffersPage({ params }: PageProps<"/[locale]/admin/
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className={`rounded-full px-3 py-1 text-xs font-bold ${state === "live" ? "bg-zellige-red text-white" : "bg-paper text-wood-dark"}`}>{t(`state.${state}`)}</span>
+                  <span className={`rounded-full px-3 py-1 text-xs font-bold ${state === "live" ? "bg-zellige-red-ink text-white" : "bg-paper text-wood-dark"}`}>{t(`state.${state}`)}</span>
                   {(state === "live" || state === "scheduled") && <StopOfferButton id={o.id} />}
                 </div>
               </li>

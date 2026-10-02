@@ -118,7 +118,7 @@ export function StaffScanner() {
           role="alert"
           data-testid="feedback"
           className={`fixed inset-x-0 top-0 z-50 px-4 pb-6 pt-[max(1rem,env(safe-area-inset-top))] text-center text-white shadow-lg ${
-            flash.tone === "success" ? "bg-menu-green" : "bg-zellige-red"
+            flash.tone === "success" ? "bg-menu-green" : "bg-zellige-red-ink"
           }`}
           onClick={() => setFlash(null)}
         >

@@ -579,6 +579,14 @@
       "hide": "Masquer",
       "addItem": "Ajouter un produit",
       "addCategory": "Ajouter une catégorie"
-    }
+    },
+    "poster": "Affiche QR"
+  },
+  "poster": {
+    "print": "Imprimer l'affiche",
+    "headline": "Votre carte Rashfa, en un scan",
+    "step1": "Scannez le code avec l'appareil photo de votre téléphone.",
+    "step2": "Montrez votre code personnel à chaque commande.",
+    "step3": "Une petite douceur aujourd'hui, ou un cadeau mystère plus tard."
   }
 }
