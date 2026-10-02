@@ -308,5 +308,12 @@
     "priceAtCounter": "at the counter",
     "empty": "The menu is being written. Come back in a moment.",
     "photosNote": "All photos are of our own crêpes and drinks, just as we serve them."
+  },
+  "push": {
+    "flashBody": "{reward}. For the first {qty}, until {until}.",
+    "winbackTitle": "It's been a while",
+    "winbackBody": "Your seat is still here, and a small gift is waiting.",
+    "birthdayTitle": "Happy birthday, {name}",
+    "birthdayBody": "Some sips feel like memories. A small gift is waiting for you at Rashfa."
   }
 }

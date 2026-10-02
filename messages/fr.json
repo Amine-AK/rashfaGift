@@ -308,5 +308,12 @@
     "priceAtCounter": "au comptoir",
     "empty": "Le menu s'écrit en ce moment. Revenez dans un instant.",
     "photosNote": "Toutes les photos montrent nos propres crêpes et boissons, telles que nous les servons."
+  },
+  "push": {
+    "flashBody": "{reward}. Pour les {qty} premiers, jusqu'à {until}.",
+    "winbackTitle": "Cela fait un moment",
+    "winbackBody": "Votre place est toujours là, et un petit cadeau vous attend.",
+    "birthdayTitle": "Joyeux anniversaire, {name}",
+    "birthdayBody": "Certaines gorgées ont le goût des souvenirs. Un petit cadeau vous attend chez Rashfa."
   }
 }
