@@ -1,0 +1,50 @@
+{
+  "common": {
+    "cafeName": "Rashfa",
+    "slogan": "Certaines gorgées ont le goût des souvenirs.",
+    "metaDescription": "Café Rashfa : cumulez vos visites, débloquez un cadeau mystère et profitez des douceurs de l'après-midi.",
+    "language": "Langue",
+    "back": "Retour",
+    "loading": "Un instant…",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "continue": "Continuer",
+    "dh": "{amount} DH",
+    "errorGeneric": "Un petit contretemps. Réessayez dans un instant.",
+    "privacy": "Confidentialité",
+    "staffArea": "Équipe",
+    "menu": "Menu",
+    "notFoundTitle": "Cette page s'est éclipsée",
+    "notFoundBody": "Revenons à une place familière.",
+    "goHome": "Retour chez Rashfa"
+  },
+  "landing": {
+    "title": "Bienvenue chez Rashfa",
+    "intro": "Un petit café pour les moments lents. Montrez votre carte à chaque visite, et de temps en temps, une petite surprise vous attendra.",
+    "join": "Obtenir ma carte Rashfa",
+    "myCard": "Ouvrir ma carte",
+    "seeMenu": "Voir le menu",
+    "howTitle": "Comment ça marche",
+    "step1": "Montrez votre code personnel au comptoir.",
+    "step2": "Choisissez : une petite douceur aujourd'hui, ou la garder pour plus tard.",
+    "step3": "Gardez-la quelques fois, et un cadeau mystère s'ouvre pour vous.",
+    "signature": "Notre signature",
+    "signatureText": "Des crêpes chaudes, pliées avec soin."
+  },
+  "privacy": {
+    "title": "Votre vie privée",
+    "intro": "Nous gardons seulement ce qu'il faut pour vous reconnaître au comptoir et garder vos cadeaux. Rien de plus.",
+    "collectTitle": "Ce que nous gardons",
+    "collect": "Votre numéro de téléphone (pour vous connecter), votre prénom, votre date d'anniversaire si vous la partagez, vos visites et vos cadeaux, et vos préférences de notifications.",
+    "whyTitle": "Pourquoi",
+    "why": "Pour compter vos visites, préparer vos cadeaux et, seulement si vous l'acceptez, vous envoyer quelques notifications douces (jamais plus de deux par semaine, et jamais la nuit).",
+    "shareTitle": "Qui y a accès",
+    "share": "Uniquement l'équipe Rashfa. Nous ne vendons ni ne partageons vos données. Elles sont hébergées chez nos prestataires (Supabase, Vercel) et envoyées par SMS uniquement pour votre code de connexion.",
+    "rightsTitle": "Vos droits",
+    "rights": "Conformément à la loi marocaine 09-08, vous pouvez accéder à vos données, les corriger ou les supprimer à tout moment. Vous pouvez supprimer votre compte vous-même depuis les Réglages : tout ce qui est personnel est effacé immédiatement.",
+    "contactTitle": "Contact",
+    "contact": "Demandez-nous au comptoir, ou écrivez-nous à l'adresse affichée au café.",
+    "updated": "Dernière mise à jour : octobre 2026"
+  }
+}

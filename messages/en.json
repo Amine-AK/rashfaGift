@@ -1,0 +1,50 @@
+{
+  "common": {
+    "cafeName": "Rashfa",
+    "slogan": "Some sips feel like memories.",
+    "metaDescription": "Rashfa café: collect your visits, unlock a mystery gift, and catch a slow-afternoon treat.",
+    "language": "Language",
+    "back": "Back",
+    "loading": "One moment…",
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "continue": "Continue",
+    "dh": "{amount} DH",
+    "errorGeneric": "Something slipped. Please try again in a moment.",
+    "privacy": "Privacy",
+    "staffArea": "Staff",
+    "menu": "Menu",
+    "notFoundTitle": "This page wandered off",
+    "notFoundBody": "Let's bring you back to a familiar seat.",
+    "goHome": "Back to Rashfa"
+  },
+  "landing": {
+    "title": "Welcome to Rashfa",
+    "intro": "A small café for slow moments. Show your card when you visit, and now and then we'll keep a little surprise for you.",
+    "join": "Get my Rashfa card",
+    "myCard": "Open my card",
+    "seeMenu": "See the menu",
+    "howTitle": "How it works",
+    "step1": "Show your personal code at the counter.",
+    "step2": "Choose: a little treat today, or save it for later.",
+    "step3": "Save a few times and a mystery gift opens for you.",
+    "signature": "Our signature",
+    "signatureText": "Warm crêpes, folded with care."
+  },
+  "privacy": {
+    "title": "Your privacy",
+    "intro": "We keep only what we need to recognise you at the counter and keep your gifts. Nothing more.",
+    "collectTitle": "What we keep",
+    "collect": "Your phone number (to log in), your first name, your birthday if you choose to share it, your visits and the gifts you receive, and your notification settings.",
+    "whyTitle": "Why",
+    "why": "To count your visits, prepare your gifts, and, only if you agree, send you a few gentle notifications (never more than a couple a week, and never at night).",
+    "shareTitle": "Who sees it",
+    "share": "Only the Rashfa team. We never sell or share your data. It is stored with our hosting providers (Supabase, Vercel) and sent by SMS only for your login code.",
+    "rightsTitle": "Your rights",
+    "rights": "Under Moroccan Law 09-08, you can access, correct or delete your data at any time. You can delete your account yourself from Settings; everything personal is erased at once.",
+    "contactTitle": "Contact",
+    "contact": "Ask us at the counter, or write to us at the address shown in the café.",
+    "updated": "Last updated: October 2026"
+  }
+}

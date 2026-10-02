@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+/* ── Rashfa design tokens ───────────────────────────────────────────────
+   Taken from the café itself: cream walls, pine counter, zellige tables,
+   hand-drawn menu boards with dark green headings. */
+@theme {
+  --color-cream: #FBF6EE;
+  --color-paper: #FFFFFF;
+  --color-wood: #D9A066;
+  --color-wood-light: #F1DCC0;
+  --color-wood-dark: #8B5A2B;
+  --color-espresso: #3B2418;
+  --color-menu-green: #2F5D3A;
+  --color-menu-green-dark: #234630;
+  --color-plant: #6FA86A;
+  --color-blob: #DCEBD5;
+  --color-zellige-blue: #1F4E9C;
+  --color-zellige-red: #D9483B;
+  --color-zellige-yellow: #E8B43A;
+  --color-zellige-teal: #2BA59B;
+  --color-zellige-pink: #E58FA6;
+
+  --font-serif: var(--font-fraunces), "DM Serif Display", Georgia, serif;
+  --font-sans: var(--font-nunito), system-ui, sans-serif;
+  --font-hand: var(--font-caveat), cursive;
+  --font-arabic: var(--font-tajawal), system-ui, sans-serif;
+
+  --radius-card: 1.25rem;
+  --shadow-soft: 0 1px 2px rgb(59 36 24 / 0.06), 0 8px 24px -8px rgb(59 36 24 / 0.14);
+
+  --animate-flip: tile-flip 0.7s cubic-bezier(0.3, 1.4, 0.5, 1) both;
+  --animate-rise: rise 0.5s ease-out both;
+  --animate-steam: steam 2.4s ease-in-out infinite;
+  --animate-sway: sway 4s ease-in-out infinite;
+}
+
+:root {
+  --pattern-mosaic: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23fff%22/%3E%3Crect x=%221%22 y=%221%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23D9483B%22/%3E%3Crect x=%2213%22 y=%221%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2225%22 y=%221%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23E8B43A%22/%3E%3Crect x=%2237%22 y=%221%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2249%22 y=%221%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23D9483B%22/%3E%3Crect x=%221%22 y=%2213%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2213%22 y=%2213%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23E8B43A%22/%3E%3Crect x=%2225%22 y=%2213%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2237%22 y=%2213%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23D9483B%22/%3E%3Crect x=%2249%22 y=%2213%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%231F4E9C%22/%3E%3Crect x=%221%22 y=%2225%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23E8B43A%22/%3E%3Crect x=%2213%22 y=%2225%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2225%22 y=%2225%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23D9483B%22/%3E%3Crect x=%2237%22 y=%2225%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2249%22 y=%2225%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23E8B43A%22/%3E%3Crect x=%221%22 y=%2237%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2213%22 y=%2237%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23D9483B%22/%3E%3Crect x=%2225%22 y=%2237%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2237%22 y=%2237%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23E8B43A%22/%3E%3Crect x=%2249%22 y=%2237%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%231F4E9C%22/%3E%3Crect x=%221%22 y=%2249%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23D9483B%22/%3E%3Crect x=%2213%22 y=%2249%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2225%22 y=%2249%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23E8B43A%22/%3E%3Crect x=%2237%22 y=%2249%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2249%22 y=%2249%22 width=%2210%22 height=%2210%22 rx=%221%22 fill=%22%23D9483B%22/%3E%3C/svg%3E");
+--pattern-zellige: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2296%22 height=%2296%22%3E%3Cg fill=%22none%22 stroke=%22%233B2418%22 stroke-opacity=%22.07%22%3E%3Cpath d=%22M14 1h20l13 13v20L34 47H14L1 34V14z%22/%3E%3Cpath d=%22M62 1h20l13 13v20L82 47H62L49 34V14z%22/%3E%3Cpath d=%22M14 49h20l13 13v20L34 95H14L1 82V62z%22/%3E%3Cpath d=%22M62 49h20l13 13v20L82 95H62L49 82V62z%22/%3E%3C/g%3E%3Cg fill-opacity=%22.35%22%3E%3Crect x=%2244%22 y=%2244%22 width=%228%22 height=%228%22 transform=%22rotate(45 48 48)%22 fill=%22%23D9483B%22/%3E%3Crect x=%22-4%22 y=%22-4%22 width=%228%22 height=%228%22 transform=%22rotate(45 0 0)%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2292%22 y=%22-4%22 width=%228%22 height=%228%22 transform=%22rotate(45 96 0)%22 fill=%22%231F4E9C%22/%3E%3Crect x=%22-4%22 y=%2292%22 width=%228%22 height=%228%22 transform=%22rotate(45 0 96)%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2292%22 y=%2292%22 width=%228%22 height=%228%22 transform=%22rotate(45 96 96)%22 fill=%22%231F4E9C%22/%3E%3Crect x=%2244%22 y=%22-4%22 width=%228%22 height=%228%22 transform=%22rotate(45 48 0)%22 fill=%22%232BA59B%22/%3E%3Crect x=%2244%22 y=%2292%22 width=%228%22 height=%228%22 transform=%22rotate(45 48 96)%22 fill=%22%232BA59B%22/%3E%3Crect x=%22-4%22 y=%2244%22 width=%228%22 height=%228%22 transform=%22rotate(45 0 48)%22 fill=%22%23E8B43A%22/%3E%3Crect x=%2292%22 y=%2244%22 width=%228%22 height=%228%22 transform=%22rotate(45 96 48)%22 fill=%22%23E8B43A%22/%3E%3C/g%3E%3C/svg%3E");
+  color-scheme: light;
+}
+
+html {
+  background: var(--color-cream);
+  color: var(--color-espresso);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-sans);
+  min-height: 100dvh;
+}
+
+/* Arabic gets its own typeface everywhere, titles included. */
+[dir="rtl"] body,
+[dir="rtl"] .font-serif,
+[dir="rtl"] .font-hand {
+  font-family: var(--font-arabic);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-zellige-blue);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* ── Signature patterns ───────────────────────────────────────────── */
+
+/* The table top: white octagons with little coloured diamonds. */
+.bg-zellige {
+  background-color: var(--color-cream);
+  background-image: var(--pattern-zellige);
+  background-size: 96px 96px;
+}
+
+/* The table rim: a band of small coloured squares around a white card. */
+.zellige-frame {
+  padding: 6px;
+  border-radius: calc(var(--radius-card) + 6px);
+  background-color: #fff;
+  background-image: var(--pattern-mosaic);
+  background-size: 30px 30px;
+  box-shadow: var(--shadow-soft);
+}
+.zellige-frame > .zellige-inner {
+  background: var(--color-paper);
+  border-radius: var(--radius-card);
+}
+
+/* Doum straw, very light: for dividers and soft backgrounds. */
+.woven {
+  background-image:
+    repeating-linear-gradient(45deg, rgb(217 160 102 / 0.13) 0 3px, transparent 3px 9px),
+    repeating-linear-gradient(-45deg, rgb(139 90 43 / 0.07) 0 3px, transparent 3px 9px);
+}
+.woven-band {
+  height: 10px;
+  background-image:
+    repeating-linear-gradient(90deg, #E3C08F 0 6px, #D2A56C 6px 8px, #EBD0A8 8px 14px);
+  border-radius: 999px;
+  opacity: 0.8;
+}
+
+/* Hand-drawn menu board: off-white paper inside a thin pine frame. */
+.menu-board {
+  background: #FFFDF8;
+  border: 3px solid var(--color-wood);
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 6px #FFFDF8, inset 0 0 0 7px rgb(217 160 102 / 0.35), var(--shadow-soft);
+}
+.dotted-rule {
+  border: 0;
+  border-top: 2px dotted rgb(59 36 24 / 0.35);
+}
+
+/* ── Motion ────────────────────────────────────────────────────────── */
+@keyframes tile-flip {
+  from { transform: perspective(600px) rotateY(180deg); opacity: 0.2; }
+  to { transform: perspective(600px) rotateY(0); opacity: 1; }
+}
+@keyframes rise {
+  from { transform: translateY(12px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes steam {
+  0%, 100% { transform: translateY(0); opacity: 0.25; }
+  50% { transform: translateY(-4px); opacity: 0.9; }
+}
+@keyframes sway {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+@keyframes confetti-fall {
+  0% { transform: translate3d(0, -10vh, 0) rotate(0); opacity: 1; }
+  100% { transform: translate3d(var(--drift, 0), 105vh, 0) rotate(var(--spin, 540deg)); opacity: 0.9; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
